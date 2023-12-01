@@ -42,7 +42,7 @@ def calcular_metricas(processos):
     return tempo_espera_medio, tempo_retorno_medio, vazao
 
 def main():
-    processos = [Processo(i, random.randint(1, 10)) for i in range(10)]
+    processos = [Processo(i, random.randint(1, 100)) for i in range(100)]
 
     quantums = [1, 2, 3, 4, 5]
     tempos_espera = []
